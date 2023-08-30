@@ -150,11 +150,11 @@ button {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 15px;
 }
 
 .middle, .right-bar {
   background-color: var(--gray);
+  padding: 15px;
 }
 
 .projects {
