@@ -56,9 +56,33 @@ body {
 
 .upper-header {
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr 1fr 3fr;
+  grid-template-columns: 5fr 1fr 1fr 3fr;
   grid-template-rows: 1fr;
   align-items: center;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search, .upper-icons {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  min-width: 800px;
+  gap: 20px;
+}
+
+input {
+  flex: 1;
+}
+
+.upper-icons {
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 5rem;
+  flex: 1;
 }
 
 .middle {
