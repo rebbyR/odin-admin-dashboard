@@ -6,11 +6,6 @@
   --gray: #00204a17;
 }
 
-/*
-div {
-  border: 1px solid black;
-}*/
-
 body {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -56,6 +51,11 @@ body {
   margin-bottom: 3rem;
 }
 
+.nav-top, .nav-bottom {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
 .left-nav img {
   display: inline;
   width: 25%;
@@ -75,6 +75,12 @@ body {
   padding-left: 1rem;
   display: flex;
   justify-content: space-between;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+}
+
+.upper-header .icon {
+  height: 4vh;
 }
 
 .search, .upper-icons {
@@ -121,6 +127,11 @@ input {
   width: 6rem;
 }
 
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
 
 button {
   background-color: var(--blue);
@@ -158,7 +169,7 @@ button {
   border-radius: 10px;
   padding: 0.5rem;
   padding-left: 1rem;
-  border-left: 3px solid #1e40af;
+  border-left: 5px solid #1e40af;
 }
 
 .project, .announcements, .trending {
@@ -167,11 +178,10 @@ button {
 
 }
 
-
-
 .right-bar {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  padding-right: 1rem;
 }
 
 
@@ -179,4 +189,37 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0.5rem;
+}
+
+.announcement:nth-of-type(1), .announcement:nth-of-type(2) {
+  border-bottom: 1px solid #00000023;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trend-picture {
+  width: 3rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.trend p {
+  margin-top: 10px;
+  color: #00000070;
+  font-size: 15px;
+}
+
+.middle p, .trend p, .announcement p {
+  color: #00000070;
+  font-size: 15px;
 }
